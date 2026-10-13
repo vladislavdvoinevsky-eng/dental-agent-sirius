@@ -1,0 +1,71 @@
+/* Ответ администратора в пузыре: плотнее, чем статья, но с воздухом между абзацами. */
+.markdown-content p {
+  margin: 0.55em 0;
+  line-height: 1.6;
+}
+.markdown-content > :first-child {
+  margin-top: 0;
+}
+.markdown-content > :last-child {
+  margin-bottom: 0;
+}
+.markdown-content ul,
+.markdown-content ol {
+  margin: 0.5em 0 0.5em 1.25em;
+}
+.markdown-content li {
+  margin-top: 0.25em;
+}
+.markdown-content li::marker {
+  color: var(--muted-foreground);
+}
+.markdown-content strong {
+  font-weight: 600;
+}
+
+.markdown-content code:not(pre code) {
+  background-color: var(--accent);
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.markdown-content a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--input);
+}
+
+.markdown-content a:hover {
+  text-decoration-color: currentColor;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid var(--input);
+  padding-left: 0.9rem;
+  color: var(--muted-foreground);
+}
+
+.markdown-content pre {
+  overflow-x: auto;
+}
+
+.markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.6em 0;
+  font-size: 0.93em;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.markdown-content th {
+  background-color: var(--sheet);
+  font-weight: 600;
+}

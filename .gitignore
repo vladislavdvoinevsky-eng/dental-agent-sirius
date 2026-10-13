@@ -1,0 +1,26 @@
+# Секреты и локальные настройки
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Рабочие данные и логи
+logs/*
+!logs/.keep
+*.db
+*.sqlite
+*.sqlite3
+
+# Node / UI
+node_modules/
+.next/
+
+# Системное
+.DS_Store
+__MACOSX/

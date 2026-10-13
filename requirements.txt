@@ -1,0 +1,9 @@
+langgraph
+langchain-core
+langchain-ollama
+langchain-mcp-adapters
+mcp
+langgraph-cli[inmem]
+python-dotenv
+colorama
+qrcode
